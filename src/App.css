@@ -1,38 +1,120 @@
 .App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#city {
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#temperature {
+  font-size: 60px;
+  text-align: center;
+}
+.weather {
+  border: 1px solid #74e0f2;
+  padding: 15px;
+  margin: 65px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: #74e0f2;
+}
+#humidity {
+  text-align: right;
+  display: block;
+  margin: 0px 0px;
+  opacity: 0.8;
+  font-style: italic;
+  font-size: 18px;
+}
+.cloud {
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 35px;
+}
+.rain {
+  color: #52c1da;
+  text-align: center;
+  font-size: 35px;
+}
+.units {
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+}
+#date {
+  margin-top: 0;
+  margin-bottom: 0rem;
+  text-align: left;
+  font-size: 23px;
+  opacity: 0.8;
+  font-style: italic;
+}
+#cloud {
+  text-align: left;
+}
+
+#wind {
+  text-align: right;
+  opacity: 0.8;
+  font-style: italic;
+  font-size: 18px;
+}
+
+#precipitation {
+  text-align: right;
+}
+
+#description {
+  text-align: left;
+  font-size: 18px;
+  opacity: 0.8;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-forecast-date {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+.github {
+  text-align: center;
+  color: #ffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#weatherVideo {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
