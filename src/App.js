@@ -50,6 +50,12 @@ export default function App() {
           </div>
         </div>
       </div>
+      <div>
+        <a href="https://github.com/cassidyct/weather-react">
+          Open-source code
+        </a>{" "}
+        by Cassidy
+      </div>
     </div>
   );
 }
