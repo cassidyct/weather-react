@@ -15,7 +15,7 @@ export default function Weatherinfo(props) {
       <div id="wind"> Wind: {props.data.wind}mph</div>
 
       <div className="d-flex weather-temperature">
-        <img src="" alt="Clear" id="icon" />
+        <img src={props.data.iconUrl} alt="Clear" id="icon" />
         <span className="temperature" id="temperature">
           {Math.round(props.data.temperature)}
         </span>

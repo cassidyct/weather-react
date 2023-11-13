@@ -15,6 +15,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       city: response.data.name,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -42,28 +43,29 @@ export default function Weather(props) {
               onSubmit={handleSubmit}
               className="search-form"
               id="search-form"
-            />
-            <div className="row">
-              <div className="col-8">
-                <input
-                  type="search"
-                  placeholder="Type a city..."
-                  autoFocus="on"
-                  autoComplete="off"
-                  id="city-input"
-                  className="form-control"
-                  onChange={handleCityChange}
-                />
+            >
+              <div className="row">
+                <div className="col-9">
+                  <input
+                    type="search"
+                    placeholder="Type a city..."
+                    autoFocus="on"
+                    autoComplete="off"
+                    id="city-input"
+                    className="form-control"
+                    onChange={handleCityChange}
+                  />
+                </div>
+                <div className="col-3">
+                  <input
+                    className="btn btn-primary"
+                    type="submit"
+                    value="Search"
+                  />
+                </div>
               </div>
-              <div className="col-4">
-                <input
-                  className="btn btn-primary"
-                  type="submit"
-                  value="Search"
-                />
-              </div>
-              <Weatherinfo data={weatherData} />
-            </div>
+            </form>
+            <Weatherinfo data={weatherData} />
           </div>
         </div>
       </div>
