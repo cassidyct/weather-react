@@ -48,8 +48,6 @@ body {
 }
 .units {
   font-size: 15px;
-  position: relative;
-  top: 20px;
 }
 #date {
   margin-top: 0;
@@ -117,4 +115,10 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
+}
+
+.weather-icon {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 20px;
 }
