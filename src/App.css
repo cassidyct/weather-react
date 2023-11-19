@@ -21,12 +21,12 @@ body {
   text-align: center;
 }
 .weather {
-  border: 1px solid #74e0f2;
+  border: 1px solid #d9f2ff;
   padding: 15px;
   margin: 65px auto;
   max-width: 600px;
   border-radius: 10px;
-  background-color: #74e0f2;
+  background-color: #d9f2ff;
 }
 #humidity {
   text-align: right;
